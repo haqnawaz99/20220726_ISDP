@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All in One</title>
+</head>
+<body>
+    Name: <input type="text" id="myText">
+    <br>
+    Total Amount: <input type="number" id="totalAmount">
+    <br>
+    <button onclick="
+    let asdf = document.getElementById('myText').value;
+    document.getElementById('heading').innerText = asdf;
+    "
+    >Write Name
+    </button>
+    <button onclick="
+    let amount = document.getElementById('totalAmount').value;
+    let zakatAmount = amount /40;
+    document.getElementById('heading').innerText = zakatAmount;
+    "
+    
+    >Calculate Zakat</button>
+    <h1 id="heading">Test text</h1>
+
+</body>
+</html>

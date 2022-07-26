@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    Name: <input type="text" id="myText" value="Musa">
+    Age: <input type="number" id="myNumb" value="123">
+    <p>Click the button to display the value of the value attribute of the text field.</p>
+
+    <button onclick="var name = document.getElementById('myText').value;
+    document.getElementById('showValue').innerText = name">
+        Get Value
+    </button>
+    <button onclick="var number1 = document.getElementById('myNumb').value;
+            document.getElementById('showNumValue').innerHTML = number;">
+            Show Value
+    </button>
+    <br>
+    <input type="color" id="color">
+    <button 
+    onclick= "var rang =document.getElementById('color').value;
+    // document.getElementById('showValue').innerHTML = rang;
+    document.getElementById('showValue').style.color = rang;
+     "
+    >Change Color</button><br>
+   <input type="date" id="myDate">
+    <button onclick="var date =document.getElementById('myDate').value;
+     document.getElementById('showValue').innerHTML = date;
+     ">Show Date</button><br>
+    <input type="time" id="myTime">
+    <button onclick="var time =document.getElementById('myTime').value;
+         document.getElementById('showValue').innerHTML = time;
+         ">Show Time</button><br>
+    <h1 id="showValue"></h1>
+    <h1 id="showNumValue"></h1>
+    <script>
+    </script>
+
+</body>
+
+</html>
